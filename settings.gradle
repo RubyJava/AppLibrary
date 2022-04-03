@@ -1,4 +1,4 @@
-
+include ':Lib-Resource'
 gradle.ext.applicationId = "com.library.testing"
 gradle.ext.compileSdkVersion = 30
 gradle.ext.buildToolsVersion = "30.0.2"
