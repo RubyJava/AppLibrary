@@ -23,6 +23,7 @@ gradle.ext.androidxConstraintlayout = "2.1.0"
 // google library
 gradle.ext.googleMaterial = "1.4.0"
 
+include ':Lib-Utils'
 include ':Lib-Exception'
 include ':Lib-Resource'
 include ':Lib-Font'
