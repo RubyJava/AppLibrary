@@ -21,12 +21,12 @@ public class FontsUtilTest {
     private Context mContext;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         mContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test

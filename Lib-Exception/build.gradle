@@ -3,6 +3,8 @@ apply {
 }
 
 dependencies {
+    implementation project(path: ':Lib-Utils')
+
     implementation "androidx.appcompat:appcompat:$gradle.androidxAppcompat"
 
     testImplementation "junit:junit:$gradle.androidxJunit"
