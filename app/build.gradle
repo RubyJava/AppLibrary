@@ -29,6 +29,10 @@ android {
 }
 
 dependencies {
+    implementation project(path: ':Lib-Exception')
+    implementation project(path: ':Lib-Font')
+    implementation project(path: ':Lib-Resource')
+    implementation project(path: ':Lib-Utils')
 
     implementation "androidx.appcompat:appcompat:$gradle.androidxAppcompat"
     implementation "com.google.android.material:material:$gradle.googleMaterial"
