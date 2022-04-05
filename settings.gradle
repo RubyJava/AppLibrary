@@ -1,28 +1,36 @@
-gradle.ext.applicationId = "com.library.testing"
-gradle.ext.compileSdkVersion = 30
-gradle.ext.buildToolsVersion = "30.0.2"
-gradle.ext.minSdkVersion = 16
-gradle.ext.targetSdkVersion = 30
-gradle.ext.versionCode = 1
-gradle.ext.versionName = "1.0"
+gradle.ext {
+    applicationId = "com.library.testing"
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.2"
+    minSdkVersion = 16
+    targetSdkVersion = 30
+    versionCode = 1
+    versionName = "1.0"
 
-// maven url
-gradle.ext.maveUrlSnapshot = System.getProperty("user.dir") + "/AppRespository/snapshot"
-gradle.ext.maveUrlRelease = System.getProperty("user.home") + "/AppRespository/release"
-gradle.ext.maveGroupId = "com.library"
-gradle.ext.mavePublishingRelease = false
+    // maven url
+    maveUrlSnapshot = System.getProperty("user.dir") + "/AppRespository/snapshot"
+    maveUrlRelease = System.getProperty("user.home") + "/AppRespository/release"
+    maveGroupId = "com.library"
+    mavePublishingRelease = false
 
-// androidx library
-gradle.ext.androidxJunit = "4.13.2"
-gradle.ext.androidxTestJunit = "1.1.3"
-gradle.ext.androidxTestEspresso = "3.4.0"
+    // androidx library
+    androidxJunit = "4.13.2"
+    androidxTestJunit = "1.1.3"
+    androidxTestEspresso = "3.4.0"
 
-gradle.ext.androidxAppcompat = "1.3.1"
-gradle.ext.androidxConstraintlayout = "2.1.0"
+    androidxAppcompat = "1.3.1"
+    androidxConstraintlayout = "2.1.0"
 
-// google library
-gradle.ext.googleMaterial = "1.4.0"
+    // google library
+    googleMaterial = "1.4.0"
+    googleGson = "2.8.6"
 
+    // network
+    androidOkhttp = "3.14.9" // java
+    androidRetrofit = "2.9.0"
+    androidRetrofitConverterGson = "2.9.0"
+}
+include ':Lib-Network'
 include ':Lib-Utils'
 include ':Lib-Exception'
 include ':Lib-Resource'
